@@ -1,6 +1,6 @@
 # openmusic-api
 
-Submission Project for Back-End Fundamental Class from Dicoding (Revised Submission from 20 December 2021)
+Submission Project for Back-End Fundamental Class from Dicoding (Revised Submission Criteria, 20/12/2021)
 
 # How to run
  
