@@ -12,17 +12,14 @@ Submission Project for Back-End Fundamental Class from Dicoding (Revised Submiss
 Set PGUSER, PGHOST, PGPASSWORD, PGDATABASE, & PGPORT to your desire
 on .env files.
 ```
-
 ### Install dependencies
 ```
 $ npm install
 ```
-
 ### Create tables using migration
 ```
 $ npm run migrate up
 ```
-
 ### Run web service in dev mode w/ nodemon
 ```
 $ npm run start-dev
