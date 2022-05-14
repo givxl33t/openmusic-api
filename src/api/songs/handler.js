@@ -35,7 +35,6 @@ class SongsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -95,7 +94,6 @@ class SongsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -127,7 +125,6 @@ class SongsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -156,7 +153,6 @@ class SongsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'

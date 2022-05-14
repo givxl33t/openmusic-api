@@ -8,7 +8,6 @@ class AuthenticationsHandler {
     this._tokenManager = tokenManager
     this._validator = validator
 
-    // TODO bind handlers
     this.postAuthenticationHandler = this.postAuthenticationHandler.bind(this)
     this.putAuthenticationHandler = this.putAuthenticationHandler.bind(this)
     this.deleteAuthenticationHandler = this.deleteAuthenticationHandler.bind(this)
@@ -46,7 +45,6 @@ class AuthenticationsHandler {
         return response
       }
 
-      // Server ERROR!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -83,7 +81,6 @@ class AuthenticationsHandler {
         return response
       }
 
-      // Server ERROR!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -116,7 +113,6 @@ class AuthenticationsHandler {
         return response
       }
 
-      // Server ERROR!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'

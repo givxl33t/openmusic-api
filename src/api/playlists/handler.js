@@ -45,7 +45,6 @@ class PlaylistsHandler {
         return response
       }
 
-      // Server ERROR!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -91,7 +90,6 @@ class PlaylistsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -124,7 +122,6 @@ class PlaylistsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -143,7 +140,7 @@ class PlaylistsHandler {
       const { songId } = req.payload
 
       await this._playlistsService.verifyPlaylistAccess(id, credentialId)
-      // verify song existence
+
       await this._songsService.getSongById(songId)
       await this._playlistsService.addSongToPlaylist(id, songId)
       await this._playlistsService.addPlaylistActivity(id, songId, credentialId, 'add')
@@ -164,7 +161,6 @@ class PlaylistsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -199,7 +195,6 @@ class PlaylistsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -234,7 +229,6 @@ class PlaylistsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -270,7 +264,6 @@ class PlaylistsHandler {
         return response
       }
 
-      // case server error!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'

@@ -19,7 +19,7 @@ class CollaborationsHandler {
       const { playlistId, userId } = req.payload
 
       await this._playlistsService.verifyPlaylistOwner(playlistId, credentialId)
-      // verify user existence
+
       await this._usersService.getUserById(userId)
       const collaborationId = await this._collaborationsService.addCollaboration(playlistId, userId)
 
@@ -42,7 +42,6 @@ class CollaborationsHandler {
         return response
       }
 
-      // Server ERROR!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
@@ -76,7 +75,6 @@ class CollaborationsHandler {
         return response
       }
 
-      // Server ERROR!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'

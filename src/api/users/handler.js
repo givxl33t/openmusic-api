@@ -100,7 +100,6 @@ class UsersHandler {
         return response
       }
 
-      // Server ERROR!
       const response = res.response({
         status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami.'
